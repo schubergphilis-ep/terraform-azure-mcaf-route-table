@@ -1,6 +1,3 @@
-data "azurerm_client_config" "current" {
-}
-
 resource "azurerm_route_table" "this" {
   name                          = var.name
   location                      = var.location
