@@ -1,12 +1,9 @@
-data "azurerm_client_config" "current" {
-}
-
 resource "azurerm_route_table" "this" {
-  name                           = var.name
-  location                       = var.location
-  resource_group_name            = var.resource_group_name
-  tags                           = var.tags
-  bgp_route_propagation_enabled  = var.bgp_route_propagation_enabled 
+  name                          = var.name
+  location                      = var.location
+  resource_group_name           = var.resource_group_name
+  tags                          = var.tags
+  bgp_route_propagation_enabled = var.bgp_route_propagation_enabled
 }
 
 resource "azurerm_route" "this" {
