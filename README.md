@@ -75,7 +75,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | The name of the Route Table | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Name of the resource group to Create the Route Table in | `string` | n/a | yes |
 | <a name="input_bgp_route_propagation_enabled"></a> [bgp\_route\_propagation\_enabled](#input\_bgp\_route\_propagation\_enabled) | n/a | `bool` | `false` | no |
-| <a name="input_routes"></a> [routes](#input\_routes) | A list of routes | <pre>list(object({<br>    name                   = string<br>    address_prefix         = string<br>    next_hop_type          = string<br>    next_hop_in_ip_address = optional(string)<br>  }))</pre> | `null` | no |
+| <a name="input_routes"></a> [routes](#input\_routes) | A list of routes | <pre>list(object({<br/>    name                   = string<br/>    address_prefix         = string<br/>    next_hop_type          = string<br/>    next_hop_in_ip_address = optional(string)<br/>  }))</pre> | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to assign to the resource. | `map(string)` | `{}` | no |
 
 ## Outputs
